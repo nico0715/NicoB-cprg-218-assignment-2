@@ -15,26 +15,54 @@
 </head>
 <body>
   <section class="hero-container">
-    <!-- Remove and add hero banner HTML -->
-    <div class="remove-assignment-content">
+    <div class="div1">
       <h1>Solar Pychic Services</h1>
     </div>
   </section>
-  <section class="container content-container">
-    <!-- Remove and add content HTML -->
-    <div class="remove-assignment-content">
-      <h1>Content</h1>
-    </div>
+  <section class="content">
+    <div class="div2">
+		<h1>Content</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in erat non elit porta semper. Curabitur a nisi id nibh consequat scelerisque a non velit. In hac habitasse platea dictumst. Suspendisse tellus tortor, consequat ac commodo id, dapibus eu justo. Ut vehicula felis lectus, eget luctus lacus eleifend sit amet. Nunc scelerisque dictum placerat. Aliquam vel orci et ipsum elementum pharetra et ut neque. Aliquam iaculis augue magna, et venenatis dolor lacinia eget. In euismod ante sed enim condimentum, eu laoreet felis dictum. Mauris auctor mi vel condimentum luctus. Nam at augue et purus egestas semper. Donec ornare dui vitae faucibus commodo.</p></div>
+	 <div class="div_img"> <img src="assets/pexels-anete-lusina-4790590.jpg" class="picture2" alt=""/>	  </div>
   </section>
-  <section class="container accordion-container">
-    <!-- Remove and add accordion HTML -->
-    <div class="remove-assignment-content">
+  <section class="content">
+    <div class="div3">
       <h1>Accordion</h1>
+		<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
     </div>
   </section>
-  <section class="footer-container">
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+  <section class="content">
     <!-- Remove and add footer HTML -->
-    <div class="remove-assignment-content">
+    <div class="div4">
       <h1>Footer</h1>
     </div>
   </section>
