@@ -24,7 +24,7 @@
   	<section class="conteiner">
     	<div class="div2"><h3>Who we are</h3>
 			<p>Solar psychic Services (sps) is a psychic and esoteric service provider, founded in 2020 by  Nico Barerrero our head tarotist and medium. What originally started as a party trick grew into a life changing service that helps by guiding and navgating the challenges of our life. Here at Solar Psychic Services we  belive in providing ethical esoteric and divination practices. Building our clients trust by proving honest readings and we promise never to lie, exagerate or manipulate  your readings.  With this principles based in honesty we hope to change the perception of pychic providers</p></div>
-	 	<div class="div_img"> <video autoplay class="picture2"> <source src="assets/FinalAd.mp4"></video>	  </div>
+	 	<div class="div_img"> <video autoplay class="picture2"> <source src="assets/FinalAd.mp4"></video>	<button id="playPause">Play/Pause</button>  </div>
   	</section>
   	<section class="conteiner">
 		
@@ -108,6 +108,20 @@ for (i = 0; i < acc.length; i++) {
     <p>© Copyrights <span id="year"></span> by Nico Barrero. All rights reserved.</p><script>
 document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
+	<script>
+    var video = document.getElementById("video");
+    var playPauseButton = document.getElementById("playPause");
+
+    playPauseButton.addEventListener("click", function() {
+      if (video.paused) {
+        video.play();
+        playPauseButton.textContent = "Pause";
+      } else {
+        video.pause();
+        playPauseButton.textContent = "Play";
+      }
+    });
+  </script>
 </footer></div>
   </section>
 </body>
